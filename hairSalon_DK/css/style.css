@@ -1,0 +1,127 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section {
+  padding: 5%;
+}
+
+header nav ul li {
+  float: left;
+  width: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  clear: both;
+}
+
+main > section.welcome {
+  width: 80%;
+}
+
+section.welcome, section.momentum {
+  padding: 0 10%;
+}
+
+section.ad {
+  width: 40%;
+}
+
+.mainList li {
+  float: left;
+  width: 33.3333333%;
+  padding: 10px;
+}
+
+.momentum > section {
+  width: 50%;
+  float: left;
+}
+
+section.stylists > section {
+  width: 33.3333333%;
+  float: left;
+  text-align: center;
+}
+
+section.ad > section {
+  width: 50%;
+}
+
+body > h2 {
+  text-align: center;
+}
+
+section.welcome > section, .ad span {
+  background: black;
+  color: white;
+}
+
+.lookbook {
+  text-align: center;
+}
+
+.mainList {
+  text-align: center;
+  padding: 0 5%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 300;
+  padding-top: 100px;
+}
+
+nav li {
+  font-size: .8em;
+}
+
+.welcome section.mainList {
+  color: black;
+}
+
+.mainList h3 {
+  font-size: 1em;
+}
+
+main {
+  background: url("http://placekitten.com/800");
+}
+section.momentum {
+  background: rgb(243, 244, 246);
+  clear: both;
+}

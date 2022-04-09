@@ -1,0 +1,97 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+background: black;
+color: white;
+}
+
+nav li, nav input {
+  float: left;
+  width: 8%;
+  color: white;
+  display: block;
+}
+
+body span {
+  text-align: right;
+  padding-top: 20px;
+}
+
+body > h3, body > span {
+  width: 50%;
+  float: left;
+}
+
+h1 {
+  clear: both;
+  padding-top: 100px;
+}
+
+
+
+main > section {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+main > section + section article {
+  width: 50%;
+  float: left;
+  padding: 0;
+}
+
+main {
+  clear: both;
+}
+
+.news article {
+  width: 33.333333333%;
+  float: left;
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.bigimage {
+  background: url("http://placekitten.com/g/600");
+}
+
+.smallimage article {
+  background: url("http://placekitten.com/375");
+}
+
+article {
+  width: 100%;
+  font-size: .8em;
+}

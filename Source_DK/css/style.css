@@ -1,0 +1,224 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {  
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background: #F5F9FC;
+  font-size: 13px;
+  color: #304659;
+  line-height: 1.2;
+}
+
+
+header ul li a {
+  font-size: .78em;
+  font-weight: 500;
+  opacity: 80%;
+}
+
+header ul li.button a {
+  font-size: .8rem;
+  opacity: 100%;
+}
+
+
+h1, h2 {
+  font-size: 1.9em;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+body > section {
+    background: white;
+  }
+
+
+h6 {
+  font-size: .6em;
+  font-weight: 500;
+  opacity: 50%;
+  letter-spacing: .5px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: .9em;
+}
+
+li.source {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-top: 6px;
+}
+
+p {
+  font-size: .9em;
+  line-height: 1.5;
+}
+
+.features a {
+  color: #304659;
+  font-weight: 700;
+  font-size: .75em;
+}
+
+a {
+  color: inherit;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body > * {
+  padding: 20px 0px 0 80px;
+}
+header {
+  padding: 5px; 
+}
+
+header ul li {
+  width: 10%;
+  float: left;
+  text-align: center;
+  padding-top: 8px;
+}
+
+header ul li.button {
+  padding-top: 0px;
+  padding-right: 20px;
+  width: 35%;
+  text-align: right;
+}
+
+header ul li.source {
+  width: 25%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+main {
+  clear: both;
+}
+
+p {
+  padding: 10px 0;
+}
+
+h6{
+  padding-top: 60px;
+}
+
+h1 {
+  padding: 10px 0;
+}
+
+
+ul.search li input {
+  width: 60%;
+  float: left;
+  background: #E1E9F0;
+  border: none;
+  height: 22px;
+  font-size: .7em;
+}
+
+ul li span {
+  background: #304659;
+  color: white;
+  text-align: center;
+  padding: 5px 13px;
+  line-height: 2.5;
+  font-size: .75em;
+  font-weight: 400;
+  height: 23px;
+}
+
+main p {
+  clear:both;
+}
+
+main section {
+  float: left;
+  width: 60%;
+}
+
+main section.tagline {
+  width: 40%;
+}
+
+
+main section.features {
+  width: 100%;
+}
+
+.features li {
+  float: left;
+  width: 25%;
+  padding: 0px 25px 50px 0px;
+}
+
+body > section {
+  width: 100%;
+  clear: both;
+}
+
+section.info > h2, section.info > p {
+  width: 55%;
+}
+
+img {
+  float: right;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 0 0 0px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+input:placeholder-shown {
+  color: #304659;
+  font-size: .8em;
+  padding-left: 10px;
+}
+
+h1, .tagline p {
+  padding-right: 50px;
+}
+
+.info p {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 450px) {
+  section.features {
+    display: none;
+  }
+}
+
+section.info {
+  height: 300px;
+}

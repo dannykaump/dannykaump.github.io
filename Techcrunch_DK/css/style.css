@@ -1,0 +1,166 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body, a {
+  font-family: aktiv-grotesk, sans-serif;
+  color: black;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 5px 0;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+h4 {
+  color: gold;
+  font-size: .75em;
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: .8em;
+  padding: 10px 0;
+}
+
+h6 {
+  font-size: .5em;
+  font-weight: 800;
+  opacity: 80%;
+  padding: 5px 0;
+}
+
+nav a {
+  opacity: 60%;
+  font-size: .9em;
+}
+
+li.login  {
+  font-size: .7em;
+  font-weight: 700;
+}
+
+p {
+  font-size: .8em;
+}
+
+main li a {
+  border-bottom: solid rgba(0, 0, 0, 0.124) 1px;
+}
+
+main li.noborder a {
+  border: none;
+}
+
+span {
+  font-size: .6em;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav {
+  float: left;
+  width: 15%;
+}
+
+main {
+  float: left;
+  width: 85%;
+}
+
+main a {
+  width: 65%;
+  float: left;
+  padding-right: 30px;
+}
+
+main ul {
+  width: 35%;
+  float: left;
+}
+
+main ul li a {
+  width: 100%;
+  padding: 10px 0;
+}
+
+main li a img {
+  width: 20px
+}
+
+img {
+  width: 100%;
+}
+
+nav img {
+  width: 50px;
+}
+
+nav ul li {
+  padding: 5px 15px;
+}
+
+input {
+  width: 75%;
+}
+
+section.news {
+  clear: both;
+  margin-left: 120px
+}
+
+section.news a {
+  width: 100%;
+}
+
+section.news > section section, section.news p, section.news img  {
+  width: 33.3333333%;
+  float: left;
+  padding: 20px 20px 20px 0px;
+}
+
+section.news img.mini {
+  float: left;
+  width: 40px;
+}
+
+section.news > section section > h6 {
+  padding: 5px 0;
+}
+
+
+
+

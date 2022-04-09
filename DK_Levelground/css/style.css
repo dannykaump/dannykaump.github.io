@@ -1,0 +1,202 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body * {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+header *, main {
+  background: rgb(104, 117, 143);
+  color: white;
+}
+
+section.split {
+  background: lightgray;
+}
+
+footer * {
+  background: rgb(27, 35, 49);
+  color: white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav * {
+float: left;
+}
+
+header nav image {
+  width: 10px;
+  float: left;
+  }
+
+header li {
+  width: 25%;
+}
+
+header ul {
+  width: 100%;
+}
+
+main {
+  clear: both;
+  height: 300px;
+}
+
+main > a {
+  width: 100%;
+}
+
+main > a * { 
+  float: left;
+  width: 50%;
+}
+
+span {
+  margin: auto;
+}
+
+
+section.split > section {
+  width: 50%;
+  float: left;
+}
+
+body > section {
+  height: 200px;
+}
+
+footer > section > section * {
+  text-align: left;
+}
+
+section h2 { 
+  margin-top: 50px;
+}
+
+section p {
+  padding-top: 10px;
+}
+
+main a {
+  width: 100%;
+  text-align: center;
+}
+
+main img {
+  width: 3%;
+  text-align: right;
+}
+
+main h4 {
+  width: 97%;
+  padding-right: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+main span {
+  border: none;
+  font-size: .6rem;
+  color: rgb(1, 1, 27);
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1 {
+  font-size: 2.5em;
+  padding: 25px;
+  font-weight: 400;
+}
+
+header * {
+  padding: 5px 0;
+}
+
+header a {
+  margin-left: 40px;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+span {
+  border: 1px solid rgb(27, 35, 49);
+  padding: 5px 20px;
+  font-size: .6em;
+  font-weight: 400;
+}
+
+main > p {
+  padding: 10px 100px;
+}
+
+section.why > p, section.volunteer > p  {
+  padding: 20px 175px;
+  font-size: .8em;
+  font-family: sans-serif;
+}
+
+li {
+  font-size: .6em;
+  font-weight: 700;
+}
+
+.donate > a {
+  background: white;
+  color: rgb(27, 35, 49);
+  padding: 5px;
+  border-radius: 10%;
+}
+
+a > h4 {
+  color: white;
+  font-weight: 300;
+  font-size: .7em;
+  padding-bottom: 50px;
+}
+
+footer {
+  font-size: .6em;
+  height: fit-content;
+}
+
+section.split p {
+  font-size: .8em;
+}
+
+section.split h3 {
+  font-size: .9em;
+}
