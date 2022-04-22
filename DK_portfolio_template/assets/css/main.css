@@ -2011,11 +2011,12 @@ input, select, textarea {
 			
 			#main > .panel.intro .pic:before {
 				content: '';
-				position: absolute;
+				/* position: absolute; */
 				top: 0;
 				left: 0;
 				/* background: url("images/overlay.png"); */
 				/* background: url("https://i.ibb.co/G7RsVHN/DRK.png"); */
+				display: none;
 				width: 100%;
 				height: 100%;
 				z-index: 1;
@@ -2028,7 +2029,7 @@ input, select, textarea {
 					#main > .panel.intro .pic img {
 						position: relative;
 						display: block;
-						position: absolute;
+						/* position: absolute; */
 						top: 0;
 						left: 0;
 						width: 100%;
@@ -2045,9 +2046,10 @@ input, select, textarea {
 
 					#main > .panel.intro .pic .arrow {
 						display: block;
-						position: absolute;
-						right: 0;
-						margin-top: -1.375em;
+						/* position: absolute; */
+						left: 0;
+						/* margin-top: -1.375em; */
+						float: right;
 						width: 2.75em;
 						height: 2.75em;
 						background: #000;
@@ -2115,7 +2117,7 @@ input, select, textarea {
 					}
 
 						#main > .panel.intro .pic {
-							height: 25em;
+							/* height: 25em; */
 							width: 100%;
 						}
 
@@ -2128,9 +2130,9 @@ input, select, textarea {
 
 				@media screen and (max-width: 736px) {
 
-					#main > .panel.intro .pic {
+					/* #main > .panel.intro .pic {
 						height: 20em;
-					}
+					} */
 
 					#main > .panel.intro header {
 						padding: 2.75em 2em 2.5em 2em;
@@ -2204,13 +2206,21 @@ img.logo {
 
 a > img {
 	border-radius: 5px;
-	border: 2px solid rgba(0, 0, 0, 0.93);
+	/* border: 1px solid rgb(0, 0, 0); */
 }
 
 .intro img {
-	width: 20%;
-	margin: auto;
-	margin: 10px;
+	width: 70px;
+	margin: 15px auto;
 	padding: 4px;
-	background: black;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+}
+
+.work {
+	padding: 10px;
 }

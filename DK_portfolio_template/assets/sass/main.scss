@@ -712,11 +712,11 @@
 						height: 100%;
 						@include vendor('object-fit', 'cover');
 						@include vendor('object-position', 'center');
+						padding: 0;
 					}
 
 					.arrow {
 						display: block;
-						position: absolute;
 						right: 0;
 						top: 50%;
 						margin-top: -1.375em;
@@ -757,6 +757,7 @@
 					padding: 3.5em 2.5em;
 					margin-bottom: 0;
 					width: 100%;
+					padding-bottom: 0;
 
 					h1 {
 						line-height: 1.25em;
@@ -791,7 +792,7 @@
 					}
 
 					header {
-						padding: 2.75em 2em 2.5em 2em;
+						padding: 2.75em 2em 0 2em;
 
 						p {
 							font-size: 1em;
